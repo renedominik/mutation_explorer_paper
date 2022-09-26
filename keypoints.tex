@@ -1,0 +1,162 @@
+\documentclass[11pt]{article}
+
+\newcommand{\ME}{\textsc{MutationExplorer}}
+
+\begin{document}
+
+\title{\ME - a server for mutating proteins and visualising the energetic effect in 3D}
+\author{ Michelle Kampfrath*, Nikola Ristic*,  Johanna Tiemann, \\Peter W. Hildebrand, Daniel Wiegreffe, René Staritzbichler}
+\date{\today}
+\maketitle
+
+\noindent
+* authors contributed equally.
+Correspondence: René, Daniel
+
+\begin{abstract}
+ \ME
+\end{abstract}
+
+\section*{Introduction}
+
+Role of mutations
+\begin{itemize}
+\item driving force of evolution
+\item cause of disease, foremost cancer
+\end{itemize}
+
+
+\noindent
+Sequencing:
+\begin{itemize}
+\item Sequence versus structure
+\item NGS
+\end{itemize}
+
+
+\noindent
+Protein conformations: 
+\begin{itemize}
+\item PDB
+\item alphaFold (makes this tool very universal!)
+\item user provided: multitude of modelling/simulation techniques
+\end{itemize}
+
+
+\clearpage
+
+\noindent
+Server:
+\begin{itemize}
+\item Systematic evaluation (upload sequencing data(?) / mutation data / alignment)
+\item Manual try and see (GUI)
+\end{itemize}
+
+
+\noindent
+Applications:
+\begin{itemize}
+\item (De)-stabilising protein interfaces
+\item (De)-stabilising protein conformations
+\item Evaluating sequencing data
+\item Understanding alignments
+\item Homology modelling
+\end{itemize}
+
+
+\noindent
+Analysis types / coloring schemes:
+\begin{itemize}
+\item Per residue energies
+\item Energy difference from mutants to wildtype
+\item Sequence conservation / NGS
+\item Profiles: hydrophobicity and other scales
+\item Differences of profiles from mutant to wildtype
+\end{itemize}
+
+
+\noindent
+Interface with AlignMe.
+Integrate into any other server. 
+Explanations in FAQs.
+
+\noindent
+Visualisation builds on Mol* and MDsrv. \\
+Yet another server on our farm: cite: SmoothT, ProteinPrompt, MDCiao, Voronoia, ...
+
+\section*{Methods and description}
+
+\subsection*{Rosetta}
+
+
+\begin{itemize}
+\item Basic concepts: knowledge based potentials
+\item Minimization
+\item Design
+\item Energy breakdown
+\end{itemize}
+
+\subsection*{Mol* viewer}
+
+\begin{itemize}
+\item successor of NGL (developed in our lab)
+\item \ME ~builds on developments in MDsrv
+\item direct collaboration with Mol*
+\item 'dual view': interactive windows: alignment and structure
+\end{itemize}
+
+\subsection*{Webserver / Usage}
+
+\begin{itemize}
+\item from AlignMe or other alignment server
+\item GUI
+\end{itemize}
+
+\subsection*{Examples}
+
+\begin{itemize}
+\item (de)-stabilising protein interfaces
+\end{itemize}
+
+
+\subsection*{Interface}
+
+\begin{itemize}
+\item Tool for identifying driver cancer mutations
+\end{itemize}
+
+
+\section*{Conclusions}
+
+\section*{Availability}
+\begin{itemize}
+\item \ME
+\item MDsrv / Mol*
+\end{itemize}
+
+\section*{Acknowledgements}
+The testers.
+
+\section*{Funding}
+
+\begin{itemize}
+\item 
+\end{itemize}
+
+\clearpage
+
+\section*{FAQ}
+
+\begin{itemize}
+\item Is it possible to mutate peptides?
+\item Is it possible to mutate transmembrane proteins?
+\item What about nonstandard AA, lipids, ions?
+\item How to mutate a mutant? How to perform multiple rounds of mutations? 
+\item How to link an alignment server for 3D visualisation to \ME
+\end{itemize}
+
+
+
+
+
+\end{document}

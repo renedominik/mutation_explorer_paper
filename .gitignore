@@ -1,0 +1,8 @@
+*.log
+*~
+*.aux
+*.pdf
+*.gz
+*.toc
+*.xml
+.DS_Store
